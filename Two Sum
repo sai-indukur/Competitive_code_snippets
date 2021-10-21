@@ -1,0 +1,32 @@
+//Two Sum Leetcode
+//Java code
+class Solution {
+    public int[] twoSum(int[] nums, int target) 
+    {
+        int[] ans=new int[2];
+        HashMap<Integer,Integer> map=new HashMap<>();
+        for(int i=0;i<nums.length;i++)
+        {
+            if(map.containsKey(target-nums[i]))
+            {
+                ans[1]=i;
+                ans[0]=map.get(target-nums[i]);
+            }
+            map.put(nums[i],i);
+        }
+        return ans;
+    }
+}
+
+//Python code
+class Solution(object):
+    
+    def twoSum(self, nums, target):
+        lst=[]
+        for i in range(len(nums)):
+            for j in range(len(nums)):
+                if(nums[i]+nums[j]==target and i!=j):
+                    lst.append(i)
+                    lst.append(j)
+                    break
+        return list(set(lst))
