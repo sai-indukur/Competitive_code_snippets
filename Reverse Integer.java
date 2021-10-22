@@ -1,5 +1,5 @@
-7.LeetCode
-//JavaCode
+//7. Reverse Integer LeetCode
+
 class Solution {
     public int reverse(int x) {
         int rev = 0;
