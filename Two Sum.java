@@ -1,5 +1,4 @@
-//Two Sum Leetcode
-//Java code
+//1.Two Sum Leetcode
 class Solution {
     public int[] twoSum(int[] nums, int target) 
     {
@@ -18,15 +17,4 @@ class Solution {
     }
 }
 
-//Python code
-class Solution(object):
-    
-    def twoSum(self, nums, target):
-        lst=[]
-        for i in range(len(nums)):
-            for j in range(len(nums)):
-                if(nums[i]+nums[j]==target and i!=j):
-                    lst.append(i)
-                    lst.append(j)
-                    break
-        return list(set(lst))
+
