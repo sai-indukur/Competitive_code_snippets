@@ -1,5 +1,4 @@
-9.LeetCode
-//Java Code
+//9. Palindrome Number LeetCode
 class Solution {
     public boolean isPalindrome(int x) 
     {
